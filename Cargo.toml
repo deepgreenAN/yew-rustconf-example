@@ -1,0 +1,12 @@
+[package]
+name = "yew_first_rustconf_video_site"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = { version = "0.20.*", features = ["csr"]}
+gloo-net = { version = "0.2.*", default-features = false, features = ["json", "http"]}
+serde = "1.*"
+wasm-bindgen-futures = "0.4.*"
